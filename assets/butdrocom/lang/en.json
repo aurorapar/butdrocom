@@ -13,5 +13,9 @@
     "item-deaddro-buitreraptor-*": "Buitrera Raptor (dead)",
     "item-deaddro-microraptor-*": "Micro Raptor (dead)",
     "item-deaddro-rahonavis-*": "Rahonavis (dead)",
-    "itemdesc-deaddro-*": "The animals heaviness weighs you down a medium amount"
+
+    "itemdesc-deaddro-large-*": "The animals heaviness weighs you down a large amount",
+    "itemdesc-deaddro-medium-*": "The animals heaviness weighs you down a medium amount",
+    "itemdesc-deaddro-small-*": "The animals heaviness weighs you down a small amount",
+    "itemdesc-deaddro-tiny-*": "The animals heaviness weighs you down a tiny amount"
 }

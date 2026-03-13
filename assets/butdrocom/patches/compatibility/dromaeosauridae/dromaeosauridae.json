@@ -6,14 +6,16 @@
     "file": "butdrocom:itemtypes/butchercreatures/dromaeosauridae/dromaeosauridae.json",
     "dependsOn": [ { "modid": "dromaeosauridae" } ]
   },
+
   {
     "op": "add",
     "path": "/server/behaviors/-",
     "value": {
       "code": "butcherable",
       "itemByType": {
-        "dromaeosauridae-*": "butdrocom:deaddro-utahraptor-adult-dead",
-        "dromaeosauridae-*-baby-*": "butdrocom:deaddro-utahraptor-baby-dead"
+        "dromaeosauridae-utahraptor-*": "butdrocom:deaddro-large-dead",
+        "dromaeosauridae-dakotaraptor-*": "butdrocom:deaddro-large-dead",
+        "dromaeosauridae-achillobator-*": "butdrocom:deaddro-large-dead"
       }
     },
     "file": "dromaeosauridae:entities/land/dromaeosauridae.json",
@@ -25,8 +27,67 @@
     "value": {
       "code": "butcherable",
       "itemByType": {
-        "dromaeosauridae-*": "butdrocom:deaddro-utahraptor-adult-dead",
-        "dromaeosauridae-*-baby-*": "butdrocom:deaddro-utahraptor-baby-dead"
+        "dromaeosauridae-utahraptor-*": "butdrocom:deaddro-large-dead",
+        "dromaeosauridae-dakotaraptor-*": "butdrocom:deaddro-large-dead",
+        "dromaeosauridae-achillobator-*": "butdrocom:deaddro-large-dead"
+      }
+    },
+    "file": "dromaeosauridae:entities/land/dromaeosauridae.json",
+    "dependsOn": [ { "modid": "dromaeosauridae" } ]
+  },
+
+
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "butcherable",
+      "itemByType": {
+        "dromaeosauridae-austroraptor-*": "butdrocom:deaddro-medium-dead",
+        "dromaeosauridae-deinonychus-*": "butdrocom:deaddro-medium-dead"
+      }
+    },
+    "file": "dromaeosauridae:entities/land/dromaeosauridae.json",
+    "dependsOn": [ { "modid": "dromaeosauridae" } ]
+  },
+
+
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "butcherable",
+      "itemByType": {
+        "dromaeosauridae-austroraptor-*": "butdrocom:deaddro-medium-dead",
+        "dromaeosauridae-deinonychus-*": "butdrocom:deaddro-medium-dead"
+      }
+    },
+    "file": "dromaeosauridae:entities/land/dromaeosauridae.json",
+    "dependsOn": [ { "modid": "dromaeosauridae" } ]
+  },
+
+
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "butcherable",
+      "itemByType": {
+        "dromaeosauridae-*": "butdrocom:deaddro-small-dead",
+        "dromaeosauridae-*-baby-*": "butdrocom:deaddro-tiny-dead"
+      }
+    },
+    "file": "dromaeosauridae:entities/land/dromaeosauridae.json",
+    "dependsOn": [ { "modid": "dromaeosauridae" } ]
+  },
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "butcherable",
+      "itemByType": {
+        "dromaeosauridae-*": "butdrocom:deaddro-small-dead",
+        "dromaeosauridae-*-baby-*": "butdrocom:deaddro-tiny-dead"
       }
     },
     "file": "dromaeosauridae:entities/land/dromaeosauridae.json",
