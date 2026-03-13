@@ -3,7 +3,7 @@
     "op": "replace",
     "path": "/enabled",
     "value": true,
-    "file": "butdrocom:itemtypes/butchercreatures/dromaeosauridae/dromaeosauridae.json",
+    "file": "butdrocom:itemtypes/dromaeosauridae/dromaeosauridae.json",
     "dependsOn": [ { "modid": "dromaeosauridae" } ]
   },
 
@@ -50,8 +50,6 @@
     "file": "dromaeosauridae:entities/land/dromaeosauridae.json",
     "dependsOn": [ { "modid": "dromaeosauridae" } ]
   },
-
-
   {
     "op": "add",
     "path": "/client/behaviors/-",
@@ -65,7 +63,6 @@
     "file": "dromaeosauridae:entities/land/dromaeosauridae.json",
     "dependsOn": [ { "modid": "dromaeosauridae" } ]
   },
-
 
   {
     "op": "add",

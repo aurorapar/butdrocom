@@ -24,17 +24,80 @@
 		}
 	],
 	"texturesByType": {
-		"deaddro-*-dead": { "meat": { "base": "butchering:item/butchercreatures/animalpoultrymeatbloody" } },
-		"deaddro-*-skinned": { "meat": { "base": "butchering:item/butchercreatures/animalpoultrymeatbloody" } },
-		"deaddro-*-bledout": { "meat": { "base": "butchering:item/butchercreatures/animalpoultrymeatbledout" } },
-		"deaddro-*-rotten": { "meat": { "base": "game:block/creature/rot/rot" } }
+		"deaddro-large-dead":  {
+			"skin": { "base": "butchering:item/butchercreatures/animalpoultrymeatbloody" },
+			"meat": { "base": "butchering:item/butchercreatures/animalpoultrymeatbloody" }
+		},
+		"deaddro-large-skinned":  {
+			"skin": { "base": "butchering:item/butchercreatures/animalpoultrymeatbloody" },
+			"meat": { "base": "butchering:item/butchercreatures/animalpoultrymeatbloody" }
+		},
+		"deaddro-large-bledout":  {
+			"skin": { "base": "butchering:item/butchercreatures/animalpoultrymeatbledout" },
+			"meat": { "base": "butchering:item/butchercreatures/animalpoultrymeatbledout" }
+		},
+		"deaddro-large-rotten": {
+			"meat": { "base": "game:block/creature/rot/rot" },
+			"skin": { "base": "game:block/creature/rot/rot" }
+		},
+
+		"deaddro-medium-dead":  {
+			"skin": { "base": "butchering:item/butchercreatures/animalpoultrymeatbloody" },
+			"meat": { "base": "butchering:item/butchercreatures/animalpoultrymeatbloody" }
+		},
+		"deaddro-medium-skinned":  {
+			"skin": { "base": "butchering:item/butchercreatures/animalpoultrymeatbloody" },
+			"meat": { "base": "butchering:item/butchercreatures/animalpoultrymeatbloody" }
+		},
+		"deaddro-medium-bledout":  {
+			"skin": { "base": "butchering:item/butchercreatures/animalpoultrymeatbledout" },
+			"meat": { "base": "butchering:item/butchercreatures/animalpoultrymeatbledout" }
+		},
+		"deaddro-medium-rotten": {
+			"meat": { "base": "game:block/creature/rot/rot" },
+			"skin": { "base": "game:block/creature/rot/rot" }
+		},
+
+		"deaddro-small-dead":  {
+			"skin": { "base": "butchering:item/butchercreatures/animalpoultrymeatbloody" },
+			"meat": { "base": "butchering:item/butchercreatures/animalpoultrymeatbloody" }
+		},
+		"deaddro-small-skinned":  {
+			"skin": { "base": "butchering:item/butchercreatures/animalpoultrymeatbloody" },
+			"meat": { "base": "butchering:item/butchercreatures/animalpoultrymeatbloody" }
+		},
+		"deaddro-small-bledout":  {
+			"skin": { "base": "butchering:item/butchercreatures/animalpoultrymeatbledout" },
+			"meat": { "base": "butchering:item/butchercreatures/animalpoultrymeatbledout" }
+		},
+		"deaddro-small-rotten": {
+			"meat": { "base": "game:block/creature/rot/rot" },
+			"skin": { "base": "game:block/creature/rot/rot" }
+		},
+
+		"deaddro-tiny-dead":  {
+			"skin": { "base": "butchering:item/butchercreatures/animalpoultrymeatbloody" },
+			"meat": { "base": "butchering:item/butchercreatures/animalpoultrymeatbloody" }
+		},
+		"deaddro-tiny-skinned":  {
+			"skin": { "base": "butchering:item/butchercreatures/animalpoultrymeatbloody" },
+			"meat": { "base": "butchering:item/butchercreatures/animalpoultrymeatbloody" }
+		},
+		"deaddro-tiny-bledout":  {
+			"skin": { "base": "butchering:item/butchercreatures/animalpoultrymeatbledout" },
+			"meat": { "base": "butchering:item/butchercreatures/animalpoultrymeatbledout" }
+		},
+		"deaddro-tiny-rotten": {
+			"meat": { "base": "game:block/creature/rot/rot" },
+			"skin": { "base": "game:block/creature/rot/rot" }
+		}
 	},
 	"attributesByType": {
 
-
-		"deaddro-large-dead": {
+		"deaddro-large-*": {
 			"size": 0.5, "mass": 0.04, "bloodType": "butchering:bloodportion", "bloodAmount": 300, "butcheringWorkLoad": "large", "handbookByType": { "*-rotten": { "exclude": false }, "*": { "exclude": true } },
 			"hangingShape": { "base": "butchering:creatures/modded/genericlarge/large-hanging" },
+			"excludeRewards": [],
 			"butcheringRewards": [
 				{ "type": "item", "code": "butchering:primemeat-raw", "quantity": { "avg": 2, "var": 1 } },
 				{ "type": "item", "code": "butchering:offal-bloody", "quantity": { "avg": 2, "var": 1 } },
@@ -44,9 +107,10 @@
 			]
 		},
 
-		"deaddro-medium-dead": {
+		"deaddro-medium-*": {
 			"size": 0.4, "mass": 0.03, "bloodType": "butchering:bloodportion", "bloodAmount": 200, "butcheringWorkLoad": "medium", "handbookByType": { "*-rotten": { "exclude": false }, "*": { "exclude": true } },
 			"hangingShape": { "base": "butchering:creatures/modded/genericmedium/medium-hanging" },
+			"excludeRewards": [],
 			"butcheringRewards": [
 				{ "type": "item", "code": "butchering:primemeat-raw", "quantity": { "avg": 1, "var": 1 } },
 				{ "type": "item", "code": "butchering:offal-bloody", "quantity": { "avg": 1, "var": 1 } },
@@ -55,9 +119,10 @@
 			"skinningRewards": [
 			]
 		},
-		"deaddro-small-dead": {
+		"deaddro-small-*": {
 			"size": 0.3, "mass": 0.02, "bloodType": "butchering:bloodportion", "bloodAmount": 50, "butcheringWorkLoad": "small", "handbookByType": { "*-rotten": { "exclude": false }, "*": { "exclude": true } },
 			"hangingShape": { "base": "butchering:creatures/modded/genericsmall/small-hanging" },
+			"excludeRewards": [],
 			"butcheringRewards": [
 				{ "type": "item", "code": "butchering:offal-bloody", "quantity": { "avg": 0, "var": 1 } },
 				{ "type": "item", "code": "game:poultry-raw", "quantity": { "avg": 4, "var": 1 } }
@@ -65,9 +130,10 @@
 			"skinningRewards": [
 			]
 		},
-		"deaddro-tiny-dead": {
+		"deaddro-tiny-*": {
 			"size": 0.1, "mass": 0.01, "bloodType": "butchering:bloodportion", "bloodAmount": 0, "butcheringWorkLoad": "small", "handbookByType": { "*-rotten": { "exclude": false }, "*": { "exclude": true } },
 			"hangingShape": { "base": "butchering:creatures/modded/genericsmall/small-hanging" },
+			"excludeRewards": [],
 			"butcheringRewards": [
 			],
 			"skinningRewards": [
@@ -75,10 +141,10 @@
 		}
 	},
 	"shapeByType": {
-		"deaddro-large-dead": { "base": "butchering:creatures/modded/genericlarge/large-dead" },
-		"deaddro-medium-dead": { "base": "butchering:creatures/modded/genericmedium/medium-dead" },
-		"deaddro-small-dead": { "base": "butchering:creatures/modded/genericsmall/small-dead" },
-		"deaddro-tiny-dead": { "base": "butchering:creatures/modded/genericsmall/small-dead" }
+		"deaddro-large-*": { "base": "butchering:creatures/modded/genericlarge/large-dead" },
+		"deaddro-medium-*": { "base": "butchering:creatures/modded/genericmedium/medium-dead" },
+		"deaddro-small-*": { "base": "butchering:creatures/modded/genericsmall/small-dead" },
+		"deaddro-tiny-*": { "base": "butchering:creatures/modded/genericsmall/small-dead" }
 	},
 	"storageFlagsbytype": {
 		"*-rotten": 1,
@@ -99,7 +165,7 @@
 				},
 				"transitionedStack": {
 					"type": "item",
-					"code": "butdrocom:deaddro-{type}-1-rotten"
+					"code": "butdrocom:deaddro-{type}-rotten"
 				},
 				"transitionRatio": 1
 			}
