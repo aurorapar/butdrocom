@@ -1,0 +1,35 @@
+[
+  {
+    "op": "replace",
+    "path": "/enabled",
+    "value": true,
+    "file": "butdrocom:itemtypes/butchercreatures/dromaeosauridae/dromaeosauridae.json",
+    "dependsOn": [ { "modid": "dromaeosauridae" } ]
+  },
+  {
+    "op": "add",
+    "path": "/server/behaviors/-",
+    "value": {
+      "code": "butcherable",
+      "itemByType": {
+        "dromaeosauridae-*": "butdrocom:deaddro-utahraptor-adult-dead",
+        "dromaeosauridae-*-baby-*": "butdrocom:deaddro-utahraptor-baby-dead"
+      }
+    },
+    "file": "dromaeosauridae:entities/land/dromaeosauridae.json",
+    "dependsOn": [ { "modid": "dromaeosauridae" } ]
+  },
+  {
+    "op": "add",
+    "path": "/client/behaviors/-",
+    "value": {
+      "code": "butcherable",
+      "itemByType": {
+        "dromaeosauridae-*": "butdrocom:deaddro-utahraptor-adult-dead",
+        "dromaeosauridae-*-baby-*": "butdrocom:deaddro-utahraptor-baby-dead"
+      }
+    },
+    "file": "dromaeosauridae:entities/land/dromaeosauridae.json",
+    "dependsOn": [ { "modid": "dromaeosauridae" } ]
+  }
+]

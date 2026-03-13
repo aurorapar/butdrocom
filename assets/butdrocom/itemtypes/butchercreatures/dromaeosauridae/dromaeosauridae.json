@@ -1,0 +1,240 @@
+{
+	"enabled": false,
+	"code": "deaddro",
+	"class": "butcherable",
+	"variantgroups": [
+		{"code": "type","states": ["utahraptor","dakotaraptor","achillobator","austroraptor","deinonychus","dromaeosaurus","adasaurus","velociraptor","saurornitholestes","atrociraptor","pyroraptor","buitreraptor","microraptor","rahonavis"]},
+        {"code": "age","states": [ "adult","baby"]},
+		{"code": "state","states": ["dead", "skinned", "bledout", "rotten"]}
+	],
+	"maxstacksize": 1,
+	"behaviors": [
+		{
+			"name": "GroundStorable",
+			"properties": {
+				"layout": "SingleCenter",
+				"collisionBox": {
+					"x1": 0.2,
+					"y1": 0,
+					"z1": 0.2,
+					"x2": 0.8,
+					"y2": 0.5,
+					"z2": 0.8
+				}
+			}
+		}
+	],
+	"texturesByType": {
+		"deaddro-*-dead": { "meat": { "base": "butchering:item/butchercreatures/animalpoultrymeatbloody" } },
+		"deaddro-*-skinned": { "meat": { "base": "butchering:item/butchercreatures/animalpoultrymeatbloody" } },
+		"deaddro-*-bledout": { "meat": { "base": "butchering:item/butchercreatures/animalpoultrymeatbledout" } },
+		"deaddro-*-rotten": { "meat": { "base": "game:block/creature/rot/rot" } }
+	},
+	"attributesByType": {
+
+
+		"deaddro-utahraptor-*-dead": {
+			"size": 0.7, "mass": 0.04, "bloodType": "butchering:bloodportion", "bloodAmount": 100, "butcheringWorkLoad": "large", "handbookByType": { "*-rotten": { "exclude": false }, "*": { "exclude": true } },
+			"hangingShape": { "base": "butchering:creatures/modded/genericlarge/large-hanging" },
+			"butcheringRewards": [
+				{ "type": "item", "code": "butchering:primemeat-raw", "quantity": { "avg": 2, "var": 1 } },
+				{ "type": "item", "code": "butchering:offal-bloody", "quantity": { "avg": 2, "var": 1 } },
+				{ "type": "item", "code": "game:poultry-raw", "quantity": { "avg": 12, "var": 3 } }
+			],
+			"skinningRewards": [
+			]
+		},
+		"deaddro-dakotaraptor-*-dead": {
+			"size": 0.7, "mass": 0.04, "bloodType": "butchering:bloodportion", "bloodAmount": 100, "butcheringWorkLoad": "large", "handbookByType": { "*-rotten": { "exclude": false }, "*": { "exclude": true } },
+			"hangingShape": { "base": "butchering:creatures/modded/genericlarge/large-hanging" },
+			"butcheringRewards": [
+				{ "type": "item", "code": "butchering:primemeat-raw", "quantity": { "avg": 2, "var": 1 } },
+				{ "type": "item", "code": "butchering:offal-bloody", "quantity": { "avg": 2, "var": 1 } },
+				{ "type": "item", "code": "game:poultry-raw", "quantity": { "avg": 12, "var": 3 } }
+			],
+			"skinningRewards": [
+			]
+		},
+		"deaddro-achillobator-*-dead": {
+			"size": 0.7, "mass": 0.04, "bloodType": "butchering:bloodportion", "bloodAmount": 100, "butcheringWorkLoad": "large", "handbookByType": { "*-rotten": { "exclude": false }, "*": { "exclude": true } },
+			"hangingShape": { "base": "butchering:creatures/modded/genericlarge/large-hanging" },
+			"butcheringRewards": [
+				{ "type": "item", "code": "butchering:primemeat-raw", "quantity": { "avg": 2, "var": 1 } },
+				{ "type": "item", "code": "butchering:offal-bloody", "quantity": { "avg": 2, "var": 1 } },
+				{ "type": "item", "code": "game:poultry-raw", "quantity": { "avg": 12, "var": 3 } }
+			],
+			"skinningRewards": [
+			]
+		},
+
+
+		"deaddro-austroraptor-*-dead": {
+			"size": 0.4, "mass": 0.03, "bloodType": "butchering:bloodportion", "bloodAmount": 40, "butcheringWorkLoad": "medium", "handbookByType": { "*-rotten": { "exclude": false }, "*": { "exclude": true } }, "hangingShape": { "base": "butchering:creatures/modded/genericmedium/medium-hanging" },
+			"butcheringRewards": [ { "type": "item", "code": "butchering:offal-bloody", "quantity": { "avg": 1, "var": 1 } }, { "type": "item", "code": "game:poultry-raw", "quantity": { "avg": 7, "var": 2 } } ],
+			"skinningRewards": [ ]
+		},
+		"deaddro-deinonychus-*-dead": {
+			"size": 0.4, "mass": 0.03, "bloodType": "butchering:bloodportion", "bloodAmount": 40, "butcheringWorkLoad": "medium", "handbookByType": { "*-rotten": { "exclude": false }, "*": { "exclude": true } }, "hangingShape": { "base": "butchering:creatures/modded/genericmedium/medium-hanging" },
+			"butcheringRewards": [ { "type": "item", "code": "butchering:offal-bloody", "quantity": { "avg": 1, "var": 1 } }, { "type": "item", "code": "game:poultry-raw", "quantity": { "avg": 7, "var": 2 } } ],
+			"skinningRewards": [ ]
+		},
+		"deaddro-dromaeosaurus-*-dead": {
+			"size": 0.4, "mass": 0.03, "bloodType": "butchering:bloodportion", "bloodAmount": 40, "butcheringWorkLoad": "medium", "handbookByType": { "*-rotten": { "exclude": false }, "*": { "exclude": true } }, "hangingShape": { "base": "butchering:creatures/modded/genericmedium/medium-hanging" },
+			"butcheringRewards": [ { "type": "item", "code": "butchering:offal-bloody", "quantity": { "avg": 1, "var": 1 } }, { "type": "item", "code": "game:poultry-raw", "quantity": { "avg": 7, "var": 2 } } ],
+			"skinningRewards": [ ]
+		},
+		"deaddro-adasaurus-*-dead": {
+			"size": 0.4, "mass": 0.03, "bloodType": "butchering:bloodportion", "bloodAmount": 40, "butcheringWorkLoad": "medium", "handbookByType": { "*-rotten": { "exclude": false }, "*": { "exclude": true } }, "hangingShape": { "base": "butchering:creatures/modded/genericmedium/medium-hanging" },
+			"butcheringRewards": [ { "type": "item", "code": "butchering:offal-bloody", "quantity": { "avg": 1, "var": 1 } }, { "type": "item", "code": "game:poultry-raw", "quantity": { "avg": 7, "var": 2 } } ],
+			"skinningRewards": [ ]
+		},
+		"deaddro-velociraptor-*-dead": {
+			"size": 0.4, "mass": 0.03, "bloodType": "butchering:bloodportion", "bloodAmount": 40, "butcheringWorkLoad": "medium", "handbookByType": { "*-rotten": { "exclude": false }, "*": { "exclude": true } }, "hangingShape": { "base": "butchering:creatures/modded/genericmedium/medium-hanging" },
+			"butcheringRewards": [ { "type": "item", "code": "butchering:offal-bloody", "quantity": { "avg": 1, "var": 1 } }, { "type": "item", "code": "game:poultry-raw", "quantity": { "avg": 7, "var": 2 } } ],
+			"skinningRewards": [ ]
+		},
+		"deaddro-saurornitholestes-*-dead": {
+			"size": 0.4, "mass": 0.03, "bloodType": "butchering:bloodportion", "bloodAmount": 40, "butcheringWorkLoad": "medium", "handbookByType": { "*-rotten": { "exclude": false }, "*": { "exclude": true } }, "hangingShape": { "base": "butchering:creatures/modded/genericmedium/medium-hanging" },
+			"butcheringRewards": [ { "type": "item", "code": "butchering:offal-bloody", "quantity": { "avg": 1, "var": 1 } }, { "type": "item", "code": "game:poultry-raw", "quantity": { "avg": 7, "var": 2 } } ],
+			"skinningRewards": [ ]
+		},
+		"deaddro-atrociraptor-*-dead": {
+			"size": 0.4, "mass": 0.03, "bloodType": "butchering:bloodportion", "bloodAmount": 40, "butcheringWorkLoad": "medium", "handbookByType": { "*-rotten": { "exclude": false }, "*": { "exclude": true } }, "hangingShape": { "base": "butchering:creatures/modded/genericmedium/medium-hanging" },
+			"butcheringRewards": [ { "type": "item", "code": "butchering:offal-bloody", "quantity": { "avg": 1, "var": 1 } }, { "type": "item", "code": "game:poultry-raw", "quantity": { "avg": 7, "var": 2 } } ],
+			"skinningRewards": [ ]
+		},
+		"deaddro-pyroraptor-*-dead": {
+			"size": 0.4, "mass": 0.03, "bloodType": "butchering:bloodportion", "bloodAmount": 40, "butcheringWorkLoad": "medium", "handbookByType": { "*-rotten": { "exclude": false }, "*": { "exclude": true } }, "hangingShape": { "base": "butchering:creatures/modded/genericmedium/medium-hanging" },
+			"butcheringRewards": [ { "type": "item", "code": "butchering:offal-bloody", "quantity": { "avg": 1, "var": 1 } }, { "type": "item", "code": "game:poultry-raw", "quantity": { "avg": 7, "var": 2 } } ],
+			"skinningRewards": [ ]
+		},
+		"deaddro-buitreraptor-*-dead": {
+			"size": 0.4, "mass": 0.03, "bloodType": "butchering:bloodportion", "bloodAmount": 40, "butcheringWorkLoad": "medium", "handbookByType": { "*-rotten": { "exclude": false }, "*": { "exclude": true } }, "hangingShape": { "base": "butchering:creatures/modded/genericmedium/medium-hanging" },
+			"butcheringRewards": [ { "type": "item", "code": "butchering:offal-bloody", "quantity": { "avg": 1, "var": 1 } }, { "type": "item", "code": "game:poultry-raw", "quantity": { "avg": 7, "var": 2 } } ],
+			"skinningRewards": [ ]
+		},
+		"deaddro-buitreraptor-*-dead": {
+			"size": 0.4, "mass": 0.03, "bloodType": "butchering:bloodportion", "bloodAmount": 40, "butcheringWorkLoad": "medium", "handbookByType": { "*-rotten": { "exclude": false }, "*": { "exclude": true } }, "hangingShape": { "base": "butchering:creatures/modded/genericmedium/medium-hanging" },
+			"butcheringRewards": [ { "type": "item", "code": "butchering:offal-bloody", "quantity": { "avg": 1, "var": 1 } }, { "type": "item", "code": "game:poultry-raw", "quantity": { "avg": 7, "var": 2 } } ],
+			"skinningRewards": [ ]
+		},
+		"deaddro-microraptor-*-dead": {
+			"size": 0.4, "mass": 0.03, "bloodType": "butchering:bloodportion", "bloodAmount": 40, "butcheringWorkLoad": "medium", "handbookByType": { "*-rotten": { "exclude": false }, "*": { "exclude": true } }, "hangingShape": { "base": "butchering:creatures/modded/genericmedium/medium-hanging" },
+			"butcheringRewards": [ { "type": "item", "code": "butchering:offal-bloody", "quantity": { "avg": 1, "var": 1 } }, { "type": "item", "code": "game:poultry-raw", "quantity": { "avg": 7, "var": 2 } } ],
+			"skinningRewards": [ ]
+		},
+		"deaddro-rahonavis-*-dead": {
+			"size": 0.4, "mass": 0.03, "bloodType": "butchering:bloodportion", "bloodAmount": 40, "butcheringWorkLoad": "medium", "handbookByType": { "*-rotten": { "exclude": false }, "*": { "exclude": true } }, "hangingShape": { "base": "butchering:creatures/modded/genericmedium/medium-hanging" },
+			"butcheringRewards": [ { "type": "item", "code": "butchering:offal-bloody", "quantity": { "avg": 1, "var": 1 } }, { "type": "item", "code": "game:poultry-raw", "quantity": { "avg": 7, "var": 2 } } ],
+			"skinningRewards": [ ]
+		},
+
+
+		"deaddro-*-baby-dead": {
+			"size": 0.3, "mass": 0.02, "bloodType": "butchering:bloodportion", "bloodAmount": 10, "butcheringWorkLoad": "medium", "handbookByType": { "*-rotten": { "exclude": false }, "*": { "exclude": true } }, "hangingShape": { "base": "butchering:creatures/modded/genericmedium/medium-hanging" },
+			"butcheringRewards": [ ],
+			"skinningRewards": [ ]
+		}
+	},
+	"shapeByType": {
+		"deaddro-utahraptor-*-dead": { "base": "butchering:creatures/modded/genericlarge/large-dead" },
+		"deaddro-dakotaraptor-*-dead": { "base": "butchering:creatures/modded/genericlarge/large-dead" },
+		"deaddro-achillobator-*-dead": { "base": "butchering:creatures/modded/genericlarge/large-dead" },
+		"deaddro-*-dead": { "base": "butchering:creatures/modded/genericmedium/medium-dead" },
+		"deaddro-*-skinned": { "base": "butchering:creatures/modded/genericmedium/medium-dead" },
+		"deaddro-*-bledout": { "base": "butchering:creatures/modded/genericmedium/medium-dead" },
+		"deaddro-*-rotten": { "base": "butchering:creatures/modded/genericmedium/medium-dead" },
+		"deaddro-*-baby-*": { "base": "butchering:creatures/modded/genericsmall/small-dead" }
+	},
+	"storageFlagsbytype": {
+		"*-rotten": 1,
+		"deaddro-*-baby-*": 2049,
+		"*": 2049
+	},
+	"transitionablePropsByType": {
+		"*-rotten": [],
+		"*": [
+			{
+				"type": "perish",
+				"freshHours": {
+					"avg": 80
+				},
+				"transitionHours": {
+					"avg": 24
+				},
+				"transitionedStack": {
+					"type": "item",
+					"code": "butdrocom:deaddro-{type}-1-rotten"
+				},
+				"transitionRatio": 1
+			}
+		]
+	},
+	"creativeinventory": {
+		"general": [ "*" ],
+		"items": [ "*" ]
+	},
+	"heldTpIdleAnimation": "holdunderarm",
+	"guiTransform": {
+		"translation": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"rotation": {
+			"x": -20,
+			"y": 21,
+			"z": 180
+		},
+		"origin": {
+			"x": 0.53,
+			"y": 0.35,
+			"z": 0.5
+		},
+		"scale": 1,
+		"rotate": true
+	},
+	"fpHandTransform": {
+		"translation": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"rotation": {
+			"x": -132,
+			"y": -180,
+			"z": -18
+		}
+	},
+	"tpHandTransform": {
+		"translation": {
+			"x": -0.5,
+			"y": -0.3,
+			"z": -0.7
+		},
+		"rotation": {
+			"x": -89,
+			"y": -12,
+			"z": 3
+		},
+		"scale": 0.86
+	},
+	"groundTransform": {
+		"translation": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"rotation": {
+			"x": 180,
+			"y": 33,
+			"z": -180
+		},
+		"origin": {
+			"x": 0.5,
+			"y": 0,
+			"z": 0.5
+		},
+		"scale": 4.5
+	}
+}

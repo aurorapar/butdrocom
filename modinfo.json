@@ -1,0 +1,15 @@
+{
+  "type": "content",
+  "modid": "butchering-dromaeo-compat",
+  "name": "Butchering Dromaeo Compat",
+  "authors": [
+    "SirFell",
+    "Aurorlock"
+  ],
+  "version": "Alpha",
+  "dependencies": {
+    "game": "1.21.6",
+    "butchering": "1.10.11",
+    "dromaeosauridae": "1.0.18"
+  }
+}
