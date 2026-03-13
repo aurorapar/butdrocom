@@ -6,10 +6,11 @@
     "SirFell",
     "Aurorlock"
   ],
-  "version": "Alpha",
+  "version": "1.0.0",
   "dependencies": {
     "game": "1.21.6",
     "butchering": "1.10.11",
-    "dromaeosauridae": "1.0.18"
+    "dromaeosauridae": "1.0.18",
+    "aaloppatch121": "0.0.1"
   }
 }
