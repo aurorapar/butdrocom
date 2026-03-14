@@ -1,12 +1,12 @@
 {
   "type": "content",
-  "modid": "butchering-dromaeo-compat",
+  "modid": "butdrocom",
   "name": "Butchering Dromaeo Compat",
   "authors": [
     "SirFell",
     "Aurorlock"
   ],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "dependencies": {
     "game": "1.21.6",
     "butchering": "1.10.11",
